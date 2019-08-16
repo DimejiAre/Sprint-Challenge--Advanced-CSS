@@ -174,13 +174,15 @@ p {
   border-bottom: 1px solid #F1F1F1;
 }
 .page-navigation .nav-bar {
-  width: 40%;
+  width: 400px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 @media (max-width: 500px) {
   .page-navigation .nav-bar {
     width: 100%;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 .page-navigation .nav-bar a {

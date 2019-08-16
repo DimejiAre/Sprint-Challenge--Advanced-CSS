@@ -9,11 +9,12 @@
     border-bottom: 1px solid @nav-border;
 
     .nav-bar {
-        width: 40%;
-        .flex-row();
+        width: 400px;
+        .flex-row(space-between);
 
         @media @phone {
             width: 100%;
+            .flex-row();
         }
 
         a {
