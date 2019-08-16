@@ -89,6 +89,11 @@
       .btn {
         //color, backgroundcolor can be passed as arguments
         .button();
+        a {
+          font-size: inherit;
+          color: inherit;
+          text-decoration: inherit;
+        }
 
         @media @phone {
           width: 100%;
@@ -112,4 +117,41 @@
       }
     }
   }
+// styling for Sign up form
+  .sign-up h2 {
+    text-align: center;
+    border-top: 2px dashed black;
+    padding-top: 3%;
+  }
+
+  .sign-up-form {
+    background-color: @wild-sand;
+    font-size: 1.6rem;
+    width: 80%;
+    margin: 2rem auto 5rem auto;
+    .flex-column(space-evenly);
+    border: 0.1rem solid @sea-shell;
+    padding: 3rem;
+
+    input {
+      height: 4rem;
+    }
+
+    select {
+      height: 3rem;
+    }
+
+    #submit-button {
+      color: @sea-shell;
+      height: 4rem;
+      background-color: @ebony-clay;
+  
+      &:hover {
+        cursor: pointer;
+      }
+      
+    }
+
+}
+
 }// home

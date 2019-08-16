@@ -288,6 +288,11 @@ footer {
   color: #22283A;
   background-color: white;
 }
+.home .walk .walk-text .btn a {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: inherit;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 100%;
@@ -307,4 +312,34 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .sign-up h2 {
+  text-align: center;
+  border-top: 2px dashed black;
+  padding-top: 3%;
+}
+.home .sign-up-form {
+  background-color: #F6F6F6;
+  font-size: 1.6rem;
+  width: 80%;
+  margin: 2rem auto 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 0.1rem solid #F1F1F1;
+  padding: 3rem;
+}
+.home .sign-up-form input {
+  height: 4rem;
+}
+.home .sign-up-form select {
+  height: 3rem;
+}
+.home .sign-up-form #submit-button {
+  color: #F1F1F1;
+  height: 4rem;
+  background-color: #23293B;
+}
+.home .sign-up-form #submit-button:hover {
+  cursor: pointer;
 }
