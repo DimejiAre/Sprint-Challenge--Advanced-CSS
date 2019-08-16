@@ -10,3 +10,19 @@
     display: flex;
     justify-content: @justifyContent;
 }
+
+// Buttons
+.button(@color:white, @backgroundColor:@btn-bg-color){
+    color: @color;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: @backgroundColor;
+    width: 10rem;
+
+    &:hover {
+        color: @backgroundColor;
+        background-color: @color;
+    }
+}
