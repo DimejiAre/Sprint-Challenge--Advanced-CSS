@@ -189,6 +189,12 @@ p {
   color: #454A59;
   text-decoration: none;
 }
+.page-navigation .nav-bar a:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in;
+  transition: 0.2s ease-out;
+  color: #000000;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
