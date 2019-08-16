@@ -1,1 +1,34 @@
 // Navigation code here
+
+.page-navigation {
+    width: 100%;
+    height: 90px;
+    .flex-column();
+    align-items: center;
+    background-color: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+    position: fixed;
+    z-index: 1;
+    top:0;
+
+    .nav-bar {
+        width: 400px;
+        .flex-row(space-between);
+
+        @media @phone {
+            width: 100%;
+            .flex-row();
+        }
+
+        a {
+            font-size: 1.6rem;
+            line-height: 1.4;
+            color: @nav-font;
+            text-decoration: none;
+
+            &:hover {
+                .animate(@ebony-clay)
+            }
+        }
+    }
+}

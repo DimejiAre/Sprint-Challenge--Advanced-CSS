@@ -1,1 +1,38 @@
 // Mixins Here
+
+.flex-column(@justifyContent: space-evenly){
+    display: flex;
+    flex-direction: column;
+    justify-content: @justifyContent;
+}
+
+.flex-row(@justifyContent: space-evenly){
+    display: flex;
+    justify-content: @justifyContent;
+}
+
+// Buttons
+.button(@color: @sea-shell, @backgroundColor:@btn-bg-color){
+    color: @color;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: @backgroundColor;
+    width: 10rem;
+
+    &:hover {
+        color: @backgroundColor;
+        background-color: @color;
+    }
+}
+
+// Animations
+
+//animation
+.animate(@color){
+    transform: scale(1.2);
+    transition: 0.3s ease-in;
+    transition: 0.2s ease-out;
+    color: darken(@color, 20%);
+}
