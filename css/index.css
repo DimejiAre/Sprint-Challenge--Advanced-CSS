@@ -322,9 +322,11 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .sign-up {
+  margin-top: 90px;
+}
 .home .sign-up h2 {
   text-align: center;
-  border-top: 2px dashed black;
   padding-top: 3%;
 }
 .home .sign-up-form {
