@@ -10,7 +10,11 @@
 
     .nav-bar {
         width: 40%;
-        .flex-row(space-between);
+        .flex-row();
+
+        @media @phone {
+            width: 100%;
+        }
 
         a {
             font-size: 1.6rem;
