@@ -1,1 +1,12 @@
 // Mixins Here
+
+.flex-column(@justifyContent: space-evenly){
+    display: flex;
+    flex-direction: column;
+    justify-content: @justifyContent;
+}
+
+.flex-row(@justifyContent: space-evenly){
+    display: flex;
+    justify-content: @justifyContent;
+}
